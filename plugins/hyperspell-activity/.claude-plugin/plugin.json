@@ -1,0 +1,28 @@
+{
+    "name": "hyperspell-activity",
+    "description": "Logs what this Claude session did into the Hyperspell company brain as one reviewable activity entry per session, written through the Hyperspell connector after each turn that did real work. Visibility follows the share option (suggest, the default, keeps each entry yours and asks before sharing; shared posts it to the company where allowed; personal never asks; a workspace key makes every entry the company's). /hyperspell-activity to pause.",
+    "version": "0.1.1",
+    "author": {
+        "name": "Hyperspell",
+        "email": "david@hyperspell.com"
+    },
+    "homepage": "https://hyperspell.com",
+    "license": "MIT",
+    "icon": "./logo.png",
+    "documentationUrl": "https://github.com/hyperspell/claude-plugins/tree/main/plugins/hyperspell-activity#readme",
+    "supportUrl": "https://hyperspell.com",
+    "privacyPolicyUrl": "https://hyperspell.com/privacy",
+    "userConfig": {
+        "share": {
+            "type": "string",
+            "title": "Share entries",
+            "description": "suggest keeps each entry private and asks you, in your Hyperspell Inbox (or the Slack digest), whether to share it with the company; shared shares each entry with the company at once, where the workspace allows direct sharing (otherwise it falls back to suggest); personal never asks.",
+            "default": "suggest",
+            "options": [
+                "suggest",
+                "shared",
+                "personal"
+            ]
+        }
+    }
+}

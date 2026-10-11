@@ -1,0 +1,42 @@
+{
+    "name": "hyperspell",
+    "owner": {
+        "name": "Hyperspell",
+        "email": "david@hyperspell.com"
+    },
+    "metadata": {
+        "pluginRoot": "./plugins"
+    },
+    "plugins": [
+        {
+            "name": "hyperspell-brain",
+            "source": "./plugins/hyperspell-brain",
+            "description": "The Hyperspell company brain \u2014 your organization's people, projects, decisions, and priorities, synced from Slack, email, Drive, Notion, GitHub and more.",
+            "version": "0.1.0",
+            "displayName": "Hyperspell Brain",
+            "category": "productivity",
+            "tags": [
+                "knowledge",
+                "memory",
+                "company-brain",
+                "context",
+                "hyperspell"
+            ]
+        },
+        {
+            "name": "hyperspell-activity",
+            "source": "./plugins/hyperspell-activity",
+            "description": "Logs what each Claude session did into the Hyperspell company brain as one reviewable activity entry, written through the Hyperspell connector after every turn that did real work. Visibility follows the share option: suggest (default) keeps each entry yours and asks before sharing, shared posts it to the company where the workspace allows that, personal never asks; with a workspace key every entry is the company's.",
+            "version": "0.1.1",
+            "displayName": "Hyperspell Activity",
+            "category": "productivity",
+            "tags": [
+                "activity",
+                "changelog",
+                "memory",
+                "company-brain",
+                "hyperspell"
+            ]
+        }
+    ]
+}

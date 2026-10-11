@@ -1,0 +1,15 @@
+{
+    "name": "hyperspell-brain",
+    "description": "The Hyperspell company brain: answer questions about your organization \u2014 people, roles, projects, decisions, history, priorities \u2014 from live Hyperspell tools when a connector is available, or the synced context files when not.",
+    "version": "0.1.0",
+    "author": {
+        "name": "Hyperspell",
+        "email": "david@hyperspell.com"
+    },
+    "homepage": "https://hyperspell.com",
+    "license": "MIT",
+    "icon": "./logo.png",
+    "documentationUrl": "https://github.com/hyperspell/claude-plugins/tree/main/plugins/hyperspell-brain#readme",
+    "supportUrl": "https://hyperspell.com",
+    "privacyPolicyUrl": "https://hyperspell.com/privacy"
+}
