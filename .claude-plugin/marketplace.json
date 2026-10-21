@@ -1,0 +1,42 @@
+{
+    "name": "hyperspell",
+    "owner": {
+        "name": "Hyperspell",
+        "email": "david@hyperspell.com"
+    },
+    "metadata": {
+        "pluginRoot": "./plugins"
+    },
+    "plugins": [
+        {
+            "name": "hyperspell-brain",
+            "source": "./plugins/hyperspell-brain",
+            "description": "The Hyperspell company brain \u2014 your organization's people, projects, decisions, and priorities, synced from Slack, email, Drive, Notion, GitHub and more.",
+            "version": "0.2.0",
+            "displayName": "Hyperspell Brain",
+            "category": "productivity",
+            "tags": [
+                "knowledge",
+                "memory",
+                "company-brain",
+                "context",
+                "hyperspell"
+            ]
+        },
+        {
+            "name": "hyperspell-activity",
+            "source": "./plugins/hyperspell-activity",
+            "description": "Keeps local work notes after working turns and writes one reviewable activity entry per repository and branch when work settles. Optional session handoff helps continue recent work after a new session or /clear. Visibility follows the share option: suggest (default) keeps each entry yours and asks before sharing, shared posts it to the company where the workspace allows that, personal never asks; with a workspace key every entry is the company's.",
+            "version": "0.2.0",
+            "displayName": "Hyperspell Activity",
+            "category": "productivity",
+            "tags": [
+                "activity",
+                "changelog",
+                "memory",
+                "company-brain",
+                "hyperspell"
+            ]
+        }
+    ]
+}
