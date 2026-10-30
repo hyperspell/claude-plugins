@@ -1,0 +1,38 @@
+{
+    "name": "hyperspell-activity",
+    "description": "Logs what your Claude sessions did into the Hyperspell company brain as one reviewable activity entry per piece of work (repository and branch), written through the Hyperspell connector after a quiet period, at context thresholds, before /clear and on request. Visibility follows the share option (suggest, the default, keeps each entry yours and asks before sharing; shared posts it to the company where allowed; personal never asks; a workspace key makes every entry the company's). With handoff on, a new session lists your recent work and a number continues it. /hyperspell-activity to pause.",
+    "version": "0.2.2",
+    "author": {
+        "name": "Hyperspell",
+        "email": "david@hyperspell.com"
+    },
+    "homepage": "https://hyperspell.com",
+    "license": "MIT",
+    "icon": "./logo.png",
+    "documentationUrl": "https://github.com/hyperspell/claude-plugins/tree/main/plugins/hyperspell-activity#readme",
+    "supportUrl": "https://hyperspell.com",
+    "privacyPolicyUrl": "https://hyperspell.com/privacy",
+    "userConfig": {
+        "share": {
+            "type": "string",
+            "title": "Share entries",
+            "description": "suggest keeps each entry private and asks you, in your Hyperspell Inbox (or the Slack digest), whether to share it with the company; shared shares each entry with the company at once, where the workspace allows direct sharing (otherwise it falls back to suggest); personal never asks.",
+            "default": "suggest",
+            "options": [
+                "suggest",
+                "shared",
+                "personal"
+            ]
+        },
+        "handoff": {
+            "type": "string",
+            "title": "Session handoff",
+            "description": "on lists your recent work in this repository when a session starts; typing its number continues that work with its Hyperspell entry and local note attached, instead of replaying the whole transcript. off (the default) keeps capture only.",
+            "default": "off",
+            "options": [
+                "off",
+                "on"
+            ]
+        }
+    }
+}
